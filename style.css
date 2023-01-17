@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.gridContainer {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridSquare {
+    border-style: solid;
+    flex-grow: 1;
+}
+
+.gridRow{
+    display: flex;
+    flex-grow: 1;
+}
+
+.addColor {
+    background-color: black;
+}
