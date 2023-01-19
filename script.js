@@ -21,6 +21,7 @@ function createGrid (gridSize){
                 let gridSquare = document.createElement("div");
                 gridSquare.setAttribute("class", "gridSquare");
                 gridRow.appendChild(gridSquare);
+                changeColor();
         }
     }
 }
@@ -44,9 +45,12 @@ slider.addEventListener("input", () => {
 
 
 
-
+function changeColor(){
     let colorSquares = document.querySelectorAll(".gridSquare");
 
-    colorSquares.forEach(colorSquare => colorSquares.addEventListener("click", function () {
-        colorSquare.classList.add("addColor")
-    }))
+    colorSquares.forEach(function(i) { 
+        i.addEventListener("click", function() {
+            i.classList.add("addColor");
+        });
+});
+}

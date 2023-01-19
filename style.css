@@ -22,3 +22,7 @@
 .addColor {
     background-color: black;
 }
+
+.gridSquare:hover {
+    background-color:black;
+}
