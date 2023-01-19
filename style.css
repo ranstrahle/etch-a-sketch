@@ -2,15 +2,33 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "anydore";
+    src: url("fonts/Anydore.otf");
+}    
+
+body {
+    background-color: rgba(40,44,52,255);
+    font-family: "anydore";
+    color: rgba(171,178,191,255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgba(171,178,191,255);
+}
 .gridContainer {
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    border-style: solid;
+    margin: 0 auto;
+    background-color: rgba(171,178,191,255);
 }
 
 .gridSquare {
-    border-style: solid;
     flex-grow: 1;
 }
 
@@ -19,10 +37,42 @@
     flex-grow: 1;
 }
 
-.addColor {
-    background-color: black;
+.removeColor {
+    background-color: rgba(171,178,191,255);
 }
 
-.gridSquare:hover {
-    background-color:black;
+.slideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
 }
+
+.slider{
+    cursor: pointer;
+}
+.sliderValue {
+    font-size: 40px;
+}
+
+.clearButton {
+    background-color: rgba(171,178,191,255);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: anydore;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0px 20px;
+
+}
+
+.clearButton:hover,
+.clearButton:focus {
+  background-color: white;
+}
+
